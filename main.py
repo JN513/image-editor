@@ -150,7 +150,7 @@ class Editor:
 
 
 ed = Editor()
-ed.load_image("image.jpg")
+ed.load_image("images/image.jpg")
 #ed.cartoon_image()
 #ed.rotate_image()
 #ed.rotate_image(sentido="anti_horario")
@@ -159,7 +159,7 @@ ed.load_image("image.jpg")
 #ed.gray_scale_image()
 #ed.adaptable_binary_image_gaussian()
 #ed.adaptable_binary_image_mean()
-#ed.binary_image_tozero()
+ed.binary_image_tozero()
 #ed.binary_image_tozero_reverse()
 #ed.binary_image_trunc()
 #ed.binary_image()
