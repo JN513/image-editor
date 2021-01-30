@@ -149,22 +149,4 @@ class Editor:
         self.image = self.cv_to_pil(cartoon)
 
 
-ed = Editor()
-ed.load_image("images/image.jpg")
-#ed.cartoon_image()
-#ed.rotate_image()
-#ed.rotate_image(sentido="anti_horario")
-#ed.rotate_image(sentido="anti_horario", angulo=180)
-#ed.rotate_image(angulo=170)
-#ed.gray_scale_image()
-#ed.adaptable_binary_image_gaussian()
-#ed.adaptable_binary_image_mean()
-ed.binary_image_tozero()
-#ed.binary_image_tozero_reverse()
-#ed.binary_image_trunc()
-#ed.binary_image()
-#ed.binary_image_reverse()
-#ed.smooth_image()
-#ed.save_image("images", "gray_remo") #diretorio, e nome, opcional extenção
-#ed.save_image("images", "gray_remo", extension=".png") #diretorio, e nome, opcional extenção
-ed.image.show()
+editor = Editor()
