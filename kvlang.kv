@@ -1,9 +1,61 @@
-#:set cor_texto .57, .57, .57, 1
+#:set cor_texto .0, .0, .0, 1
 #:set cor_fundo .92, .92, .92, 1
-#:set cor_borda .80, .80, .80, 1
+#:set cor_borda .0, .0, .0, 1
 #:set cor_botao .65, .65, .65, 1
 #:set cor_botao_azul .23, .41, .78, 1
 #:set cor_botao_laranja .93, .52, .31, 1
 
-Label:
-	text: 'Olá, Mundo!'
+<BoxLayoutR@BoxLayout>:
+	canvas.before:
+		Color:
+			rgba: 1., .5, .5, 1
+		Rectangle:
+			size: self.size
+			pos: self.pos
+<BoxLayoutG@BoxLayout>:
+	canvas.before:
+		Color:
+			rgba: .7, 1., .7, 1
+		Rectangle:
+			size: self.size
+			pos: self.pos
+<BoxLayoutB@BoxLayout>:
+	canvas.before:
+		Color:
+			rgba: .5, .5, 1., 1
+		Rectangle:
+			size: self.size
+			pos: self.pos
+
+<HomeScreen@Screen>:
+	BoxLayout:
+		padding: 15
+		BoxLayout:
+			orientation: 'vertical'
+			canvas.before:
+				Color:
+					rgba: cor_borda
+				RoundedRectangle:
+					size: self.size
+					pos: self.pos
+					radius: 5, 5, 5, 5
+				Color:
+					rgba: cor_fundo
+				RoundedRectangle:
+					size: self.size[0] - 12, self.size[1] - 12
+					pos: self.pos[0] + 6, self.pos[1] + 6
+					radius: 5, 5, 5, 5
+			BoxLayout:
+				Image:
+					source: 'icons/arquivo-de-imagem.png'
+					size_hint: 1, .4
+			Label:
+				color: cor_texto
+				text: 'Arraste e solte uma imagem aqui.'
+				font_size: 22
+				markup: True
+				halign: 'center'
+				valign: 'top'
+				text_size: self.size
+
+<EditingScreen@Screen>:
