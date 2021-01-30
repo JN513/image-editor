@@ -3,7 +3,8 @@ import cv2
 import numpy
 from PIL import Image
 
-class Editor():
+
+class Editor:
     image = None
     image_name = None
     image_formate = None
@@ -13,7 +14,13 @@ class Editor():
     history_position = None
 
     def reset_editor(self):
-        pass
+        image = None
+        image_name = None
+        image_formate = None
+        image_path = None
+        image_extension = None
+        image_history = []
+        history_position = None
 
     def open_image(self):
         pass
