@@ -30,6 +30,7 @@ class Editor:
         return cv_image
 
     def cv_to_pil(self, image):
+        image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         pil_image = Image.fromarray(image)
         return pil_image
 
@@ -148,5 +149,30 @@ class Editor:
         cartoon = cv2.bitwise_and(color, color, mask=edges)
         self.image = self.cv_to_pil(cartoon)
 
+    def resize_image(self, new_height=None, new_width=None):
+        cv_image = self.pil_to_cv(self.image)
+        (h, w) = cv_image.shape[:2]
+        if new_width == None:
+            new_width = w
+        if new_height == None:
+            new_height = h
+
+        cv_image = cv2.resize(
+            cv_image, (new_height, new_width), interpolation=cv2.INTER_LANCZOS4
+        )
+        self.image = self.cv_to_pil(cv_image)
+
+    def crop_image(self, x, y, w, h):
+        cv_image = self.pil_to_cv(self.image)
+        roi = cv_image[x, y : x + w, y + h]
+
+        self.image = self.pil_to_cv(roi)
+
 
 editor = Editor()
+"""
+editor.load_image("images/image.jpg")
+editor.binary_image_tozero_reverse()
+editor.image.show()
+editor.save_image(".", "car")
+"""
