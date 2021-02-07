@@ -6,20 +6,274 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>896</width>
+    <height>670</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Main</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QPushButton" name="pushButton_5">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>51</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Smooth Image</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_9">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>51</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Binary</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_11">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>51</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Binary reverse</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_12">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>51</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Binary trunc</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_10">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>51</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Binary to zero</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_8">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>51</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Binary to zero reverse</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_7">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>51</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Adaptative binary mean</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_6">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>51</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Adaptative binary gaussian</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_4">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>51</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Gray Scale</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>51</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Cartoon</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame">
+        <property name="minimumSize">
+         <size>
+          <width>450</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="sizeConstraint">
+           <enum>QLayout::SetMinimumSize</enum>
+          </property>
+          <item>
+           <widget class="QPushButton" name="rotateanti">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>61</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icons/039rotate_99984.png</normaloff>icons/039rotate_99984.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="rotatehorario">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>61</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icons/038rotate1_99878.png</normaloff>icons/038rotate1_99878.png</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QPushButton" name="reset_button">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>61</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Reset</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="close_image">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>61</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Close</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="savebutton">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>61</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Save</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>896</width>
      <height>22</height>
     </rect>
    </property>
@@ -139,26 +393,46 @@
    </property>
   </action>
   <action name="actionLanguage">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/language_icon_144262.png</normaloff>icons/language_icon_144262.png</iconset>
+   </property>
    <property name="text">
     <string>Language</string>
    </property>
   </action>
   <action name="actionEditor">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/font-selection-editor_icon-icons.com_73557.png</normaloff>icons/font-selection-editor_icon-icons.com_73557.png</iconset>
+   </property>
    <property name="text">
     <string>Editor</string>
    </property>
   </action>
   <action name="actionOn">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/4213426-about-description-help-info-information-notification_115427.png</normaloff>icons/4213426-about-description-help-info-information-notification_115427.png</iconset>
+   </property>
    <property name="text">
     <string>On</string>
    </property>
   </action>
   <action name="actionContributer">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/adb-contribute_icon-icons.com_50971.png</normaloff>icons/adb-contribute_icon-icons.com_50971.png</iconset>
+   </property>
    <property name="text">
     <string>Contribute</string>
    </property>
   </action>
   <action name="actionHelp">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/Help_icon-icons.com_55891.png</normaloff>icons/Help_icon-icons.com_55891.png</iconset>
+   </property>
    <property name="text">
     <string>Help</string>
    </property>
@@ -167,6 +441,10 @@
    </property>
   </action>
   <action name="actionDocumentation">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/writing-on-an-open-book_icon-icons.com_70325.png</normaloff>icons/writing-on-an-open-book_icon-icons.com_70325.png</iconset>
+   </property>
    <property name="text">
     <string>Documentation</string>
    </property>
